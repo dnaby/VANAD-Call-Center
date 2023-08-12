@@ -22,7 +22,7 @@ Les colonnes qui nous interessent le plus sont:
 
 Le mécanisme de routage fonctionne comme suit. Lorsqu’un client appelle, il interagit avec l’IVR (unité de réponse vocale interactive) en utilisant son clavier pour choisir le type d’appel. S’il y a un agent disponible ayant les compétences nécessaires pour traiter ce type d’appel, le client (l’appel) est alors dirigé vers l’agent le plus longtemps inactif parmi les agents disponibles; sinon, il attend dans une file d’attente invisible. Les appels de cette file d’attente sont traités dans l’ordre FCFS (premier arrivé, premier servi).
 
-## Que cherchons nous à faire
+## Que cherchons nous à faire
 
 Des études réalisées sur les centres d’appels (les systémes de service en général) ont montré que le fait d’informer les clients sur leur temps d’attente dès leur arrivée permet d’augmenter la satisfaction des clients sur la qualité de service perçu, et réduit considérablement le nombre d’abandons. Ceci combiné avec la proposition de rappel si le temps d’attente estimé est très long réduit davantage les abandons et augmente la satisfaction des clients.
 
