@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b03d8c70-4388-43ef-a930-f8eb62d87e36" name="Changes" comment="">
+    <list default="true" id="b03d8c70-4388-43ef-a930-f8eb62d87e36" name="Changes" comment="updated Readme.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dnaby/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dnaby/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dnaby/OneDaySimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dnaby/OneDaySimulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dnaby/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dnaby/Simulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelisation Stochastique.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Modelisation Stochastique.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,12 +102,24 @@
       <workItem from="1691706696315" duration="2007000" />
       <workItem from="1691715361144" duration="88000" />
       <workItem from="1691716832954" duration="601000" />
-      <workItem from="1691781190807" duration="21900000" />
+      <workItem from="1691781190807" duration="22445000" />
     </task>
+    <task id="LOCAL-00001" summary="updated Readme.md">
+      <created>1691865090228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691865090229</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated Readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated Readme.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
