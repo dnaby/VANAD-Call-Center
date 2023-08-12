@@ -1,0 +1,103 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+setwd("~/Downloads/Modélisation Stochastique/VANAD_data")
+df1 = read.table("calls-2014-01.csv", sep = ',', dec = '.', header = TRUE)
+df2 = read.table("calls-2014-02.csv", sep = ',', dec = '.', header = TRUE)
+df3 = read.table("calls-2014-03.csv", sep = ',', dec = '.', header = TRUE)
+df4 = read.table("calls-2014-04.csv", sep = ',', dec = '.', header = TRUE)
+df5 = read.table("calls-2014-05.csv", sep = ',', dec = '.', header = TRUE)
+df6 = read.table("calls-2014-06.csv", sep = ',', dec = '.', header = TRUE)
+df7 = read.table("calls-2014-07.csv", sep = ',', dec = '.', header = TRUE)
+df8 = read.table("calls-2014-08.csv", sep = ',', dec = '.', header = TRUE)
+df9 = read.table("calls-2014-09.csv", sep = ',', dec = '.', header = TRUE)
+df10 = read.table("calls-2014-10.csv", sep = ',', dec = '.', header = TRUE)
+df11 = read.table("calls-2014-11.csv", sep = ',', dec = '.', header = TRUE)
+df12 = read.table("calls-2014-12.csv", sep = ',', dec = '.', header = TRUE)
+
+#View(df)
+```
+
+```{r}
+l1 <- unique(df1$queue_name)
+l2 <- unique(df2$queue_name)
+l3 <- unique(df3$queue_name)
+l4 <- unique(df4$queue_name)
+l5 <- unique(df5$queue_name)
+l6 <- unique(df6$queue_name)
+l7 <- unique(df7$queue_name)
+l8 <- unique(df8$queue_name)
+l9 <- unique(df9$queue_name)
+l10 <- unique(df10$queue_name)
+l11 <- unique(df11$queue_name)
+l12 <- unique(df12$queue_name)
+```
+
+```{r}
+combined <- unique(c(l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12))
+
+#length(combined)
+combined
+```
+
+```{r}
+call_types <- 0:26
+```
+
+```{r}
+library(dplyr)
+
+queue_mapping <- data.frame(
+  queue_name = combined,
+  call_types = call_types
+)
+```
+
+```{r}
+df1 <- df1[which(df1$hangup != "NULL"),]
+df2 <- df2[which(df2$hangup != "NULL"),]
+df3 <- df3[which(df3$hangup != "NULL"),]
+df4 <- df4[which(df4$hangup != "NULL"),]
+df5 <- df5[which(df5$hangup != "NULL"),]
+df6 <- df6[which(df6$hangup != "NULL"),]
+df7 <- df7[which(df7$hangup != "NULL"),]
+df8 <- df8[which(df8$hangup != "NULL"),]
+df9 <- df9[which(df9$hangup != "NULL"),]
+df10 <- df10[which(df10$hangup != "NULL"),]
+df11 <- df11[which(df11$hangup != "NULL"),]
+df12 <- df12[which(df12$hangup != "NULL"),]
+
+df1 <- left_join(df1, queue_mapping, by = "queue_name")
+df2 <- left_join(df2, queue_mapping, by = "queue_name")
+df3 <- left_join(df3, queue_mapping, by = "queue_name")
+df4 <- left_join(df4, queue_mapping, by = "queue_name")
+df5 <- left_join(df5, queue_mapping, by = "queue_name")
+df6 <- left_join(df6, queue_mapping, by = "queue_name")
+df7 <- left_join(df7, queue_mapping, by = "queue_name")
+df8 <- left_join(df8, queue_mapping, by = "queue_name")
+df9 <- left_join(df9, queue_mapping, by = "queue_name")
+df10 <- left_join(df10, queue_mapping, by = "queue_name")
+df11 <- left_join(df11, queue_mapping, by = "queue_name")
+df12 <- left_join(df12, queue_mapping, by = "queue_name")
+```
+
+```{r}
+# repeat for df1 to df12
+df1$date <- as.Date(df1$date_received)
+
+library(dplyr, warn.conflicts = FALSE)
+
+sub_datasets <- df1 %>%
+  group_by(date) %>%
+  group_split()
+
+setwd("~/Downloads/Modélisation Stochastique/year/1")
+for (i in seq_along(sub_datasets)) {
+  date <- as.character(sub_datasets[[i]]$date[1])
+  file_name <- paste0(date, ".csv")
+  write.csv(sub_datasets[[i]], file = file_name)
+}
+```
