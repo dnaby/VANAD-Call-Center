@@ -4,14 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b03d8c70-4388-43ef-a930-f8eb62d87e36" name="Changes" comment="" />
+    <list default="true" id="b03d8c70-4388-43ef-a930-f8eb62d87e36" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dnaby/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dnaby/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dnaby/OneDaySimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dnaby/OneDaySimulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/ept/git/dnaby/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/ept/git/dnaby/Simulation.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -30,10 +47,50 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.Simulation">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sn.ept.git.dnaby.Main" />
+      <module name="projet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sn.ept.git.dnaby.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Simulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sn.ept.git.dnaby.Simulation" />
+      <module name="projet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sn.ept.git.dnaby.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Simulation" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,8 +99,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687518057690</updated>
-      <workItem from="1687518059184" duration="1000" />
+      <workItem from="1687518059184" duration="17127000" />
+      <workItem from="1687813981745" duration="20585000" />
+      <workItem from="1688384184439" duration="15000" />
+      <workItem from="1690670962148" duration="6085000" />
+      <workItem from="1691706696315" duration="2007000" />
+      <workItem from="1691715361144" duration="88000" />
+      <workItem from="1691716832954" duration="601000" />
+      <workItem from="1691781190807" duration="21900000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

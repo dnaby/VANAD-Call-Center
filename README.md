@@ -37,3 +37,10 @@ Pour ce faire, nous allons faire un replay des journées du centre d’appels (s
 
 ## Visualisation
 
+![Repartition des appels](./images/repartition.png)
+
+![Distribution avant feature scaling](./images/dist1.png)
+
+![Distribution après feature scaling](./images/dist2.png)
+
+![RRMSE de prédicteurs de delai](./images/predict.png)
