@@ -13,12 +13,12 @@ Mais ces données sur les activités des angents ne concernent pas ce présent t
 Le jeu de données des d’appels qui contient les informations suivantes : l’heure d’arrivée de l’appel, l’heure à laquelle l’agent commence à traiter l’appel, l’heure de départ, le type de service demandé par l’appelant, l’identité de l’agent qui traite l’appel, etc.
 
 Les colonnes qui nous interessent le plus sont:
-date_received: date et heure d’arrivée de l’appel;
-queue_name: l’ID du type de service demandé par l’appelant;
-angent_number: l’ID de l’agent qui traite l’appel
-answered: date et heure à laquelle l’appel a été pris(NULL sinon);
-hangup: date et heure à laquelle l’appel a pris fin;
-etc.
+- date_received: date et heure d’arrivée de l’appel;
+- queue_name: l’ID du type de service demandé par l’appelant;
+- angent_number: l’ID de l’agent qui traite l’appel
+- answered: date et heure à laquelle l’appel a été pris(NULL sinon);
+- hangup: date et heure à laquelle l’appel a pris fin;
+- etc.
 
 Le mécanisme de routage fonctionne comme suit. Lorsqu’un client appelle, il interagit avec l’IVR (unité de réponse vocale interactive) en utilisant son clavier pour choisir le type d’appel. S’il y a un agent disponible ayant les compétences nécessaires pour traiter ce type d’appel, le client (l’appel) est alors dirigé vers l’agent le plus longtemps inactif parmi les agents disponibles; sinon, il attend dans une file d’attente invisible. Les appels de cette file d’attente sont traités dans l’ordre FCFS (premier arrivé, premier servi).
 
