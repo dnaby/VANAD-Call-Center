@@ -34,3 +34,6 @@ Nous souhaitons trouver la fonction F qui minimise les erreurs de prédictions.
 
 Dans les données toutes les informations qui décrivent le vecteur x ne sont pas observées. Le premier chalenge est de recouvrer ces données manquantes. 
 Pour ce faire, nous allons faire un replay des journées du centre d’appels (simulation par retraçage). Nous allons utiliser le package simevents de la librairie SSJ. A la fin de la simulation, nous allons avoir un jeu de donn ées D = {z1,··· ,zn} avec zi = (xi,wi) où xi ≡ “état du système” et wi ≡ “temps d’attente” du client i. Nous allons utiliser 80% des données pour apprendre la fonction de prédiction F avec des méthodes d’apprentissage machine et mesurer les performances de ce dernier avec les 20% des données restantes.
+
+## Visualisation
+
